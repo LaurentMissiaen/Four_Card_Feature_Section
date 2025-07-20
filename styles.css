@@ -18,7 +18,7 @@ body {
 }
 
 body {
-  margin: 3em 1.7em;
+  margin: 3em 2em;
 }
 
 img {
@@ -28,7 +28,7 @@ img {
 
 .head_card h1 {
   font-weight: 200;
-  font-size: 1.6em;
+  font-size: 1.4em;
   color: hsl(212, 6%, 44%);
 }
 
@@ -38,7 +38,7 @@ img {
 }
 
 .head_card p {
-  font-size: 0.98em;
+  font-size: 0.96em;
   color: hsl(212, 6%, 44%);
   font-weight: 400;
   padding: 1em 0;
@@ -52,4 +52,23 @@ img {
   background-color: hsl(0, 0%, 100%);
   box-shadow: 0.01em 0.5em 1em 0.004em hsl(212, 6%, 80%);
   border-radius: 0.3em;
+  padding: 2em 2em;
+}
+
+.content_card h2 {
+  font-size: 0.99em;
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+}
+
+.content_card p {
+  font-size: 0.82em;
+  color: hsl(212, 6%, 44%);
+}
+
+.content_card img {
+  float: right;
+  max-width: 3em;
+  max-height: 3em;
+  padding-top: 2em;
 }
