@@ -27,7 +27,6 @@ img {
   width: 100%;
   gap: 1.2em;
   font-family: Poppins, sans-serif;
-  grid-template-columns: repeat(3, 1fr);
   place-content: center;
 }
 
@@ -51,7 +50,6 @@ img {
 
 .head_card {
   text-align: center;
-  grid-column: span 3;
 }
 
 .content_card {
@@ -82,19 +80,44 @@ img {
 
 .border_cyan {
   border-top: 0.25em solid hsl(180, 62%, 55%);
-  grid-row: span 2;
 }
 .border_red {
   border-top: 0.25em solid hsl(0, 78%, 62%);
 }
 .border_yellow {
   border-top: 0.25em solid hsl(34, 97%, 64%);
-  grid-column-start: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
 }
 .border_blue {
   border-top: 0.25em solid hsl(212, 86%, 64%);
-  grid-column-start: 3;
-  grid-row: span 2;
+}
+
+@media (min-width: 40em) {
+  .head_card {
+    max-width: 30em;
+    justify-self: center;
+    padding: 2em 0;
+  }
+  .head_card h1 {
+    font-size: 1.8em;
+  }
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 60em;
+    gap: 2em;
+  }
+  .head_card {
+    grid-column: span 3;
+  }
+  .border_cyan {
+    grid-row: span 2;
+  }
+  .border_yellow {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .border_blue {
+    grid-column-start: 3;
+    grid-row: span 2;
+  }
 }
